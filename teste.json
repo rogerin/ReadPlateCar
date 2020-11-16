@@ -1,0 +1,13 @@
+{
+    "version":2,
+    "data_type":"alpr_results",
+    "epoch_time":1605537267274,
+    "img_width":640,
+    "img_height":480,
+    "processing_time_ms":260.354523,
+    "regions_of_interest": [
+        {"x":0,"y":0,"width":640,"height":480}],
+    "results": [
+        {"confidence": 90, "plate": 1233}
+    ]
+}
