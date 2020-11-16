@@ -21,10 +21,10 @@ io.on("connection", function (client) {
 })
 
 let paths = {
-    camera1: './camera1.json',
-    camera2: './camera2.json',
-    camera3: './camera3.json',
-    camera4: './camera4.json',
+    camera1: './public/camera1.json',
+    camera2: './public/camera2.json',
+    camera3: './public/camera3.json',
+    camera4: './public/camera4.json',
 };
 
 let read = true;
