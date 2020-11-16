@@ -8,6 +8,6 @@
     "regions_of_interest": [
         {"x":0,"y":0,"width":640,"height":480}],
     "results": [
-        {"confidence": 90, "plate": 1233}
+        {"confidence": 90, "plate": 2}
     ]
 }
