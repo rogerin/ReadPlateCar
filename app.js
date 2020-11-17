@@ -1,3 +1,14 @@
+/*
+ DOC
+ command: v4l2-ctl --list-devices
+ alpr /dev/video0 -j stdin > /home/pi/Documents/readplate/public/camera1.json 
+ alpr /dev/video2 -j stdin > /home/pi/Documents/readplate/public/camera2.json 
+ alpr /dev/video4 -j stdin > /home/pi/Documents/readplate/public/camera3.json 
+ alpr /dev/video6 -j stdin > /home/pi/Documents/readplate/public/camera4.json 
+ 
+
+*/
+
 const EventEmitter = require('events');
 const fs  = require("fs");
 var express = require('express');
