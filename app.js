@@ -16,19 +16,23 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
+
 const readLastLines = require('read-last-lines');
+
+app.use(express.static('public'));
+
 
 const myEmitter = new EventEmitter();
 let connected = false;
 
 io.on("connection", function (client) {
+console.log('conect')
     connected = true;
     
     myEmitter.on('event', function(data, camera) {
-        console.log('send', data)
-        if(connected) {
+        console.log(data.results[0])
             client.emit("event", data.results[0]);
-        }
+        
     });
 
 })
@@ -41,6 +45,9 @@ let paths = {
 };
 
 let read = true;
+
+
+
 fs.watch(paths.camera1, function (event, filename) {
     if (filename) {
         try {
